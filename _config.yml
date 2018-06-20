@@ -6,7 +6,9 @@ description: Jekyll template for API documentation.
 url: http://peltas.io
 google_analytics_key:
 permalink: pretty
-baseurl: "/" 
+baseurl: "./"
+site:
+  baseurl: "./"
 
 # -----
 # Build

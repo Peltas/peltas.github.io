@@ -1,12 +1,12 @@
 # ----
 # Site
 
-title: Aviator
+title: Peltas.io
 description: Jekyll template for API documentation.
-url: https://example.com
+url: http://peltas.io
 google_analytics_key:
 permalink: pretty
-baseurl: "http://peltas.io" 
+baseurl: "/" 
 
 # -----
 # Build

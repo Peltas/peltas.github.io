@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', '104', group: :jekyll_plugins
+gem 'github-pages', '>=104', group: :jekyll_plugins
 gem 'jekyll', '3.7.2'
 
 

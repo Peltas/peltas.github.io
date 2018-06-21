@@ -7,6 +7,7 @@ url: http://peltas.io
 google_analytics_key:
 permalink: pretty
 baseurl: /docs
+site.baseurl: /docs
 
 # -----
 # Build

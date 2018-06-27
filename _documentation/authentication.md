@@ -1,29 +1,51 @@
 ---
 title: Authentication
-position: 2
+position: 3
 parameters:
   - name:
     content:
-content_markdown: |-
-  You need to be authenticated for all API requests. You can generate an API key in your developer dashboard.
+content_markdown: |-  
+  Standard Basic HTTP Authtentication.
+  {: .success }
 
-  Add the API key to all requests as a GET parameter.
+  HTTPS => Basic HTTP over SSL.
+  {: .info }
 
-  Nothing will work unless you include this API key
-  {: .error}
+  Kerberos Authentication
+  {: .warning }
+  
+  X.509 Certificate Authentication.
+  {: .error }
+  
+  For Alfresco Audit audit, we use the same authentication that you already have in your Alfresco autehntication chain. And for Alfresco live workspace data, we use the authentication mechanism you have in place 
+  between SOLR and Alfresco.
+
 left_code_blocks:
-  - code_block:
-    title:
-    language:
+  - code_block:  |2-
+      peltas.auth.type=basicauth|x509
+    title: Authentication type
+    language: javascript
 right_code_blocks:
   - code_block: |2-
-       $.get("http://api.myapp.com/books/", { "token": "YOUR_APP_KEY"}, function(data) {
-         alert(data);
-       });
-    title: JQuery
+       peltas.auth.basic.username=YOUR_username
+       peltas.auth.basic.password=YOUR_password
+    title: HTTP Basic
+    language: javascript
+  - code_block: |2-       
+       peltas.ssl.keystoreType=JCEKS
+       peltas.ssl.trustStore=PATH...
+       peltas.ssl.trustStorePass=xxxx
+       peltas.ssl.hostVerify=false
+    title: HTTPS
     language: javascript
   - code_block: |2-
-       curl http://api.myapp.com/books?token=YOUR_APP_KEY
-    title: Curl
-    language: bash
+       TBD
+    title: Kerberos
+    language: javascript
+  - code_block: |2-
+       peltas.auth.x509.keyStore=PATH...
+       peltas.auth.x509.keyStorePass=xxxx
+       peltas.auth.x509.keystoreType=JCEKS
+    title: Cert
+    language: javascript
 ---

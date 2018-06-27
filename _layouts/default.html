@@ -25,21 +25,22 @@
 		<header>
 			<h1>
 				<button type="button" class="open-nav" id="open-nav"></button>
-				<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" height="40" alt="{{ site.title }} logo"></a>
+				<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/PleoSoft_logo.png" height="40" alt="{{ site.title }} logo"></a>
 			</h1>
 
-			<form action="{{ site.baseurl }}/search/" method="get">
-				<input type="text" name="q" id="search-input" placeholder="Search">
-				<input type="submit" value="Search" style="display: none;">
-			</form>
 
 			{% include sidebar.html %}
 
-			<p class="copyright">
-				<a href="https://cloudcannon.com/">
-					Template by CloudCannon
+			<!-- p class="copyright">
+				<a href="http://pelosoft.com/">
+					Pleo Soft
 				</a>
-			</p>
+			</p -->
+			
+			<h1>
+				<button type="button" class="open-nav" id="open-nav"></button>
+				<a href="http://pleosoft.com/"><img src="{{ site.baseurl }}/images/PleoSoft_logo.png" height="40" alt="{{ site.title }} logo"></a>
+			</h1>
 		</header>
 		<div class="main">
 			{{ content }}

@@ -6,8 +6,9 @@ description: Jekyll template for API documentation.
 url: http://peltas.io
 google_analytics_key:
 permalink: pretty
-baseurl: .
-site.baseurl: .
+baseurl: /docs
+site.baseurl: /docs
+brand-color: fbfbfb
 
 # -----
 # Build
@@ -18,8 +19,8 @@ collections:
   documentation:
     title: Documentation
     position: 1
-  api:
-    title: APIs
+  howto:
+    title: How to
     position: 2
 plugins:
   - jekyll-sitemap
@@ -42,7 +43,7 @@ defaults:
       _hide_content: true
   -
     scope:
-      type: "api"
+      type: "howto"
     values:
       _hide_content: true
 

@@ -3,7 +3,7 @@ title: Expressions
 position: 1.3
 description: Expression property mapping
 content_markdown: |-
-  Peltas expressions can be seen as virtual properties. Where an expression property always references a mapped property and provides a facility to change the format or convert the data value. The property has to be prefixed with prop: in oprder to be considered as an expression and it has to reference a preivously configured property.
+  Peltas expressions can be seen as virtual properties. Where an expression property always references a mapped property and provides a facility to change the format or convert the data value. The property has to be prefixed with prop: in order to be considered as an expression and it has to reference a previously configured property.
 left_code_blocks:
   - code_block: |-
       peltas.documentcreated.mapper.property.createdFormatted.data=prop:created

@@ -17,7 +17,7 @@ content_markdown: |-
   X.509 Certificate Authentication.
   {: .error }
   
-  For Alfresco Audit audit, we use the same authentication that you already have in your Alfresco autehntication chain. And for Alfresco live workspace data, we use the authentication mechanism you have in place 
+  For Alfresco Audit audit, we use the same authentication that you already have in your Alfresco authentication chain. And for Alfresco live workspace data, we use the authentication mechanism you have in place 
   between SOLR and Alfresco.
 
 left_code_blocks:

@@ -8,7 +8,7 @@ parameters:
 content_markdown: |-
   An execution is a command that will be used to write the data to the target storage. Peltas supports different type of targets such as databases, SOLR, Elastic Search, CSV files, flat files, etc ...
   
-  Each data writer consist of its own specific configuration
+  Each data writer consists of its own specific configuration
   {: .warning}
   
   Executions could be chained and each previous execution data is available in the next one (i.e. for referential integrity).
